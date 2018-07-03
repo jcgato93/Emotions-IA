@@ -209,6 +209,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807030224229_InitialCreate.cs" />
+    <Compile Include="Migrations\201807030224229_InitialCreate.Designer.cs">
+      <DependentUpon>201807030224229_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807030246454_changePathLenght.cs" />
+    <Compile Include="Migrations\201807030246454_changePathLenght.Designer.cs">
+      <DependentUpon>201807030246454_changePathLenght.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\EmoEmotion.cs" />
     <Compile Include="Models\EmoEmotionEnum.cs" />
     <Compile Include="Models\EmoFace.cs" />
@@ -236,6 +245,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201807030224229_InitialCreate.resx">
+      <DependentUpon>201807030224229_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807030246454_changePathLenght.resx">
+      <DependentUpon>201807030246454_changePathLenght.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
